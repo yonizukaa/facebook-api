@@ -3,6 +3,9 @@
 Voici le projet Facebook Api fait Par Johan Marin 
 
 
+Remarque: Je n'ai pas crée de dossier V1 donc ne pas inclure dans les requetes
+
+
 ```
 
 ### Prisma Model
@@ -52,7 +55,7 @@ URIs
 method	endpoint	headers	body	Response	description
 POST	/login	null	LoginDto	{ user: User, token: JwtToken }	return a JWT Token for authentication.
 POST	/register	null	RegisterDto	{ user: User}	register a new User.
-/api/users
+/api/user
 
 DTOs
 
