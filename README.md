@@ -1,8 +1,5 @@
-# Project Title
+##Facebook APi Project 
 
-One Paragraph of project description goes here
-
-## Getting Started
 Voici le projet Facebook Api fait Par Johan Marin 
 
 
