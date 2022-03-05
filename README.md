@@ -40,7 +40,7 @@ model Post {
 ## Routes
 
 API Routes
-/api/v1/authentication
+/api/authentification
 
 DTOs
 name	schema
@@ -52,23 +52,23 @@ URIs
 method	endpoint	headers	body	Response	description
 POST	/login	null	LoginDto	{ user: User, token: JwtToken }	return a JWT Token for authentication.
 POST	/register	null	RegisterDto	{ user: User}	register a new User.
-/api/v1/users
+/api/users
 
 DTOs
 
 name	schema
 
-UpdateProfile	{ firstName?: string, lastName?: string }
+UpdateProfil	{ firstName?: string, lastName?: string }
 
 
 URIs
 
 method	endpoint	headers	body	Response	description
-GET	/:id/posts	Authorization: TOKEN	null	{ posts: Post[] }	return a list of User's posts.
-GET	/:id/profile	Authorization: TOKEN	null	{ profile: Profile }	return a User's profile.
-PATCH	/:id/profile	Authorization: TOKEN	UpdateProfile	{ profile: Profile }	update a User's profile.
+GET	/:id/post	Authorization: TOKEN	null	{ posts: Post[] }	return a list of User's posts.
+GET	/:id/profil	Authorization: TOKEN	null	{ profile: Profile }	return a User's profile.
+PATCH	/:id/profil	Authorization: TOKEN	UpdateProfile	{ profile: Profile }	update a User's profile.
 DELETE	/:id	Authorization: TOKEN	null	null	update a User's profile.
-/api/v1/posts
+/api/post
 
 DTOs
 
